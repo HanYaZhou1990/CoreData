@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="5064" systemVersion="13C64" minimumToolsVersion="Automatic" macOSVersion="Automatic" iOSVersion="Automatic">
+    <entity name="MyTest" representedClassName="MyTest" syncable="YES">
+        <attribute name="test" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="test1" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="test2" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="test3" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="test4" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="time" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="MyTest" positionX="-63" positionY="-18" width="128" height="135"/>
+    </elements>
+</model>
