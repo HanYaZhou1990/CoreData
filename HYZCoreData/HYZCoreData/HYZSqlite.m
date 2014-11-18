@@ -147,7 +147,7 @@ static HYZSqlite *sqlite = nil;
      NSFetchRequest *request = [[NSFetchRequest alloc] init];
      NSEntityDescription *entityDescription = [NSEntityDescription entityForName:tableName inManagedObjectContext:[self managedObjectContextWithableName:tableName]];
      [request setEntity:entityDescription];
-     NSPredicate *predicate = [NSPredicate predicateWithFormat:[NSString stringWithFormat:@"%@==%@",predicateTitleString,predicateString]];
+     NSPredicate *predicate = [NSPredicate predicateWithFormat:[NSString stringWithFormat:@"%@='%@'",predicateTitleString,predicateString]];
      [request setPredicate:predicate];
     return [[self managedObjectContextWithableName:tableName] executeFetchRequest:request error:nil];
 }
@@ -157,7 +157,7 @@ static HYZSqlite *sqlite = nil;
     NSFetchRequest *request = [[NSFetchRequest alloc] init];
     NSEntityDescription *entityDescription = [NSEntityDescription entityForName:tableName inManagedObjectContext:[self managedObjectContextWithableName:tableName]];
     [request setEntity:entityDescription];
-    NSPredicate *predicate = [NSPredicate predicateWithFormat:[NSString stringWithFormat:@"%@==%@",predicateTitleString,predicateString]];
+    NSPredicate *predicate = [NSPredicate predicateWithFormat:[NSString stringWithFormat:@"%@='%@'",predicateTitleString,predicateString]];
     [request setPredicate:predicate];
     NSError *error = nil;
     for (MyTest *test in [[self managedObjectContextWithableName:tableName] executeFetchRequest:request error:&error]) {
@@ -177,7 +177,7 @@ static HYZSqlite *sqlite = nil;
     NSFetchRequest *request = [[NSFetchRequest alloc] init];
     NSEntityDescription *entityDescription = [NSEntityDescription entityForName:tableName inManagedObjectContext:[self managedObjectContextWithableName:tableName]];
     [request setEntity:entityDescription];
-    NSPredicate *predicate = [NSPredicate predicateWithFormat:[NSString stringWithFormat:@"%@==%@",predicateTitleString,predicateString]];
+    NSPredicate *predicate = [NSPredicate predicateWithFormat:[NSString stringWithFormat:@"%@='%@'",predicateTitleString,predicateString]];
     [request setPredicate:predicate];
     NSError *error = nil;
     for (MyTest *test in [[self managedObjectContextWithableName:tableName] executeFetchRequest:request error:&error]) {
